@@ -5,5 +5,6 @@ var bodyParser = require('body-parser');
 // create application/x-www-form-urlencoded parser
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-
+require('./users.js')(app);
+require('./posts.js')(app);
 };

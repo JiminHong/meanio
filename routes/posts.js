@@ -1,7 +1,6 @@
 module.exports = function(app) {
 
 var Post = require('../models/Post.js');
-var User = require('../models/User.js');
 
 // Inserts a new User
 app.post('/api/newPost', function(req, res){
