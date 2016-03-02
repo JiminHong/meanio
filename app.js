@@ -4,8 +4,8 @@ const express = require('express'),
 			app = express();
 // View engine
 app.use(express.static(__dirname + '/public'));
-app.get('*', function(req, res) {
-    res.sendfile('./public/index.html'); // load our public/index.html file
+app.get('/', function(req, res) {
+    res.send('./public/index.html'); // load our public/index.html file
 });
 
 

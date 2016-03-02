@@ -11,8 +11,6 @@ app.post('/api/newUser', function(req, res){
 // Finds a user
 app.get('/api/User', function(req, res){
     User.fetch(function(doc){
-
-      console.log(doc);
 	    res.json(doc);
     });
 });
