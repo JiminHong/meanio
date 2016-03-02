@@ -1,4 +1,14 @@
-message input
+ 
+<div ng-controller="FeedCtrl">
+<form name="colorForm">
+  <md-input-container>
+    <label>Message</label>
+    <input name="posts.message" ng-model="posts.message" required>
+  </md-input-container>
+  	<md-button>
+	  Post
+	</md-button>
+</form>
 tag function
 submit button
 
@@ -6,3 +16,5 @@ username
 message
 timestamp
 usertagged
+</div>
+
