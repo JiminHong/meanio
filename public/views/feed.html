@@ -1,20 +1,19 @@
- 
-<div ng-controller="FeedCtrl">
-<form name="colorForm">
-  <md-input-container>
-    <label>Message</label>
-    <input name="posts.message" ng-model="posts.message" required>
-  </md-input-container>
-  	<md-button>
-	  Post
-	</md-button>
-</form>
-tag function
+<div ng-controller="FeedCtrl" layout="column" layout-align="center center" flex>
+  <form name="colorForm" layout="column" style="width: 35%">
+    <md-input-container>
+      <label>Message</label>
+      <input name="posts.message" ng-model="posts.message" required>
+    </md-input-container>
+    <md-button class="md-raised md-primary">
+      Post
+    </md-button>
+  </form>
+
+  <!-- tag function
 submit button
 
 username
 message
 timestamp
-usertagged
+usertagged -->
 </div>
-
