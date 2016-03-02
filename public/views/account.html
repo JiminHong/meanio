@@ -1,0 +1,15 @@
+<!-- sign up and sign in -->
+<div layout="column" layout-align="center center">
+  <md-input-container>
+    <label>Username</label>
+    <input type="text" class="md-input">
+  </md-input-container>
+  <md-input-container>
+    <label>Password</label>
+    <input type="text" class="md-input" ng-required>
+  </md-input-container>
+  <div layout="row">
+    <md-button class="md-raised md-primary" ng-click="acc.login()">Login</md-button>
+    <md-button class="md-raised" ng-click="acc.signUp()">Sign Up</md-button>
+  </div>
+</div>

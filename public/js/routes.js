@@ -8,5 +8,10 @@ app.config(function ($routeProvider){
 
 		}
 	})
+	.when('/account', {
+		templateUrl : 'views/account.html',
+		controller : 'AccountCtrl',
+		controllerAs : 'acc'
+	})
 
 });
