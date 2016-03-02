@@ -14,4 +14,8 @@ var port = process.env.PORT || 8080;
 
 // =-=-=-=-=-=-=-=-=-=-=- Routes -=-=-=-=-=-=-=-=-=-=-=-=-=
 require('./routes/routes')(app);
-app.listen(port);
+
+var server = app.listen(port, function(){
+  if(process.env.DEBUG) console.log('Server Active On', port);
+});
+module.exports = server;
