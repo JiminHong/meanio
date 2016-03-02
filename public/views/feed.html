@@ -1,18 +1,24 @@
-<div ng-controller="FeedCtrl" layout="column" layout-align="center center" flex>
-  <form name="colorForm" layout="column" style="width: 35%">
-    <md-input-container>
-      <label>Message</label>
-      <input name="posts.message" ng-model="posts.message" required>
-    </md-input-container>
-    <md-button class="md-raised md-primary">
-      Post
-    </md-button>
-  </form>
 
-  <!-- tag function
-submit button
 
-username
+<div ng-controller="FeedCtrl">
+<div layout="column" layout-align="center center">
+<h1 class="md-display-3">Welcome to Wecare!</h1>
+<div flex="66" class="col-2-3" layout-fill>
+	<form>
+		<md-input-container class="md-block">
+	      	<label>Post what is the new emergency.</label>
+	      	<textarea ng-model="posts.message" md-maxlength="150" rows="5" md-select-on-focus></textarea>
+	    </md-input-container>
+		<md-button>
+			Post
+		</md-button>
+	</form>
+</div>
+
+<div ng-repeat="data in users">
+	{{data.firstName}}
+</div>
+<!-- username
 message
 timestamp
 usertagged -->
